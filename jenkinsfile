@@ -1,0 +1,12 @@
+pipeline {
+    
+    agent any
+		
+		stage('package') {
+            steps {
+              ./mvnw -B package
+            }
+        
+    }
+    
+}
